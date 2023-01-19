@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<!-- Exotica web site (OCCASIONS Page) -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../js/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Saira+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Organic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active"  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tranding</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                   Organic                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" >contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" >
+              <input class="px-2" type="search" placeholder="Search" aria-label="Search" id="formm_search">
+              <button class="btn " type="submit" id="formm_submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="main py-5">
+        <div class="container py-5">
+          <div class="row py-5">
+            <div class="col-lg-7 text-center pt-5" id="start">
+             <h1 class="pt-5" style="color: white;">
+              Nature Has Always Cared For Us !
+             </h1>
+             <button class="btn1 mt-3">More Tips</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="new mt-5 text-center">
+       <div class="container py-5">
+        <div class="row ">
+          <div class="col-lg-7 m-auto">
+            <div class="row ">
+               <div class="col-lg-4 foe">
+                 <img src="data:image/png;base64,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" class="img-luid" alt="">
+                  <h5>NATURAL</h5>
+                </div>
+               <div class="col-lg-4 foe">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGQf1njKozJtjRWEfP46YjYLZ9YSUpVKzCgQ&usqp=CAU">
+                <h5>NATURAL</h5>
+              </div>
+               <div class="col-lg-4 foe">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7iA4L3WH8sutnIZ-gnsvMxCyZAyO0Qt9qDw&usqp=CAU">
+                <h5>NATURAL</h5>
+              </div>
+          </div>
+        </div>
+       </div>
+      </section>
+      <section class="product my-5">
+        <div class="container">
+          <div class="row ">
+            <div class="col-lg-5 container text-center" id="trend">
+              <h2>What's Trending</h2>
+              <h6>Be healthy organic juice</h6>
+            </div>
+          </div>
+          <div class="row text-center pt-3 ">
+            <div class="col-lg-3">
+               <div class="card border-0 bg-light">
+                <div class="card-body">
+                  <img class="img-fluid w-100" src="https://i.pinimg.com/236x/b8/24/32/b824322e91c2eae83020d698916ad207.jpg"> 
+                </div>
+               </div>
+               <h4>Carrots</h4>
+                  <p style="font-size: 1.19rem">234$</p>
+               <div>
+                <h5></h5>
+               </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card border-0 ">
+               <div class="card-body">
+                 <img class="img-fluid w-100" src="https://i.pinimg.com/236x/74/67/c2/7467c2199e9f39bef7a0976e51d47c38.jpg"> 
+               </div>
+              </div>
+              <h4>Carrots</h4>
+                 <p style="font-size: 1.19rem">234$</p>
+              <div>
+               <h5></h5>
+              </div>
+           </div>
+           <div class="col-lg-3">
+            <div class="card border-0 ">
+             <div class="card-body">
+               <img class="img-fluid w-100" src="https://i.pinimg.com/236x/22/eb/14/22eb14922c1d907c54102ea3faf87a7f.jpg"> 
+             </div>
+            </div>
+            <h4>Carrots</h4>
+               <p style="font-size: 1.19rem">234$</p>
+            <div>
+             <h5></h5>
+            </div>
+         </div>
+         <div class="col-lg-3">
+          <div class="card border-0 bg-light">
+           <div class="card-body">
+             <img class="img-fluid w-100" src="https://i.pinimg.com/236x/6e/21/73/6e2173bc968de0c6da83c7967aa9d3ed.jpg"> 
+           </div>
+          </div>
+          <h4>Carrots</h4>
+             <p style="font-size: 1.19rem">234$</p>
+          <div>
+           <h5></h5>
+          </div>
+       </div>
+          </div>
+          <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+           <!-- <div class="row text-center pt-3 d-none" id="row2">
+            <div class="col-lg-3">
+               <div class="card border-0 ">
+                <div class="card-body">
+                  <img class="img-fluid w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbVCktR8Wk2Zr80SUDn5XQMsTlZwcVddfap08sdJT1VXhNyd1rKOEVvYLDmyaGV0JnOPY&usqp=CAU"> 
+                </div>
+               </div>
+               <h4>Carrots</h4>
+                  <p style="font-size: 1.19rem">234$</p>
+               <div>
+                <h5></h5>
+               </div>
+            </div>
+            <div class="col-lg-3 ">
+              <div class="card border-0 ">
+               <div class="card-body">
+                 <img class="img-fluid w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabU-JL9gczv2qL7eNMwsI5NB3WzZTJ3RGAl03VNOBx_XNXJgRbm7h4rTfHczz6oK78w4&usqp=CAU"> 
+               </div>
+              </div>
+              <h4>Carrots</h4>
+                 <p style="font-size: 1.19rem">234$</p>
+              <div>
+               <h5></h5>
+              </div>
+           </div>
+           <div class="col-lg-3">
+            <div class="card border-0 ">
+             <div class="card-body">
+               <img class="img-fluid w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazimP-s9bNzPZJ9heXlmXxdkEedzHPxZ6hrZqmBSqVXgLC1dxHbsjglDLcwSIRnLKasw&usqp=CAU"> 
+             </div>
+            </div>
+            <h4>Carrots</h4>
+               <p style="font-size: 1.19rem">234$</p>
+            <div>
+             <h5></h5>
+            </div>
+         </div>
+         <div class="col-lg-3">
+          <div class="card border-0 ">
+           <div class="card-body">
+             <img class="img-fluid w-100" src="https://m.media-amazon.com/images/I/81qiJh7fZgL.jpg"> 
+           </div>
+          </div>
+          <h4>Carrots</h4>
+             <p style="font-size: 1.19rem">234$</p>
+          <div>
+           <h5></h5>
+          </div>
+       </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 text-center m-auto">
+              <button class="btn1" id="btn2" onclick="MORE">Click For More</button>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- //////////////////////////////////////////////////// -->
+      <section id="not">
+        <div class="container py-3">
+          <div class="row" >
+            <div class="col-lg-8 container text-center" id="trend">
+              <h2>Welcome To Our Organic juice Sociaty</h2>
+              <h6>Be healthy organic juice</h6>
+            </div>
+          </div>
+          <div class="row pt-5 m-auto" style="width:90% ;">
+            <div class="col-lg-4 ">
+              <div class="card m-auto">
+                <div class="card-body" id="card3">
+                  <img  class="phot" src="https://i.pinimg.com/236x/42/64/b9/4264b92e7de02e66786c714329613abb.jpg" style="height: 70%;">
+                  <h4 class="pt-3">Best Quality Product</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi magnam nesciunt, at et nemo officia possimus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body" >
+                  <img  class="phot" src="https://i.pinimg.com/236x/8c/50/91/8c5091ed65f443bf44348efd04499505.jpg" style="height: 70%;">
+                  <h4 class="pt-3">Best Quality Product</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi magnam nesciunt, at et nemo officia possimus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body" id="card3">
+                  <img  class="phot" src="https://i.pinimg.com/236x/6e/10/51/6e1051c75e07a063b6f9196109795924.jpg" style="height: 70%;">
+                  <h4 class="pt-3">Best Quality Product</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi magnam nesciunt, at et nemo officia possimus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="row py-5">
+          <div class="col-lg-6 text-center m-auto">
+            <button class="btn1" id="btn2" onclick="MORE" style="width: 28%;">Shop More</button>
+          </div>
+        </div>
+      </section>
+      <!-- /////////////////////////////////////////////////////////////////////// -->
+      <section class="product mt-3">
+        <div class="container">
+          <div class="row ">
+            <div class="col-lg-5 container text-center" id="trend">
+              <h2>Explor Our Store</h2>
+              <h6>Be healthy organic juice</h6>
+            </div>
+          </div>
+          <div class="row text-center pt-3 ">
+            <div class="col-lg-3 pro">
+               <div class="card border-0 ">
+                <div class="card-body">
+                  <img class="img-fluid w-100" src="https://i.pinimg.com/236x/e7/5c/6b/e75c6b53b627749a34c3e29301f02b11.jpg"> 
+                </div>
+               </div>
+               <h4>Carrots</h4>
+                  <p style="font-size: 1.19rem">234$</p>
+               <div>
+                <h5></h5>
+               </div>
+            </div>
+            <div class="col-lg-3 pro">
+              <div class="card border-0 ">
+               <div class="card-body">
+                 <img class="img-fluid w-100" src="https://i.pinimg.com/236x/6c/4a/a2/6c4aa2dd439e66cc8e4b7defd368d5be.jpg"> 
+               </div>
+              </div>
+              <h4>Carrots</h4>
+                 <p style="font-size: 1.19rem">234$</p>
+              <div>
+               <h5></h5>
+              </div>
+           </div>
+           <div class="col-lg-3 pro">
+            <div class="card border-0 ">
+             <div class="card-body p-0">
+               <img class="img-fluid w-100" src="https://i.pinimg.com/236x/38/09/17/3809176162af827e0cd1aa2b8b886c33.jpg"> 
+             </div>
+            </div>
+            <h4>Carrots</h4>
+               <p style="font-size: 1.19rem">234$</p>
+            <div>
+             <h5></h5>
+            </div>
+         </div>
+         <div class="col-lg-3 pro">
+          <div class="card border-0">
+           <div class="card-body p-0">
+             <img class="img-fluid w-100" src="https://i.pinimg.com/236x/4b/97/0e/4b970e1a85b8307ec4fde9997dc7ae84.jpg"> 
+           </div>
+          </div>
+          <h4>Carrots</h4>
+             <p style="font-size: 1.19rem">234$</p>
+          <div>
+           <h5></h5>
+          </div>
+       </div>
+          </div>
+          <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+           <div class="row text-center pt-3 " id="row2">
+            <div class="col-lg-3 pro">
+               <div class="card border-0">
+                <div class="card-body p-0">
+                  <img class="img-fluid w-100" src="https://i.pinimg.com/236x/1d/76/47/1d7647dea25bfcc09bff4b396168ea2b.jpg"> 
+                </div>
+               </div>
+               <h4>Carrots</h4>
+                  <p style="font-size: 1.19rem">234$</p>
+               <div>
+                <h5></h5>
+               </div>
+            </div>
+            <div class="col-lg-3 pro">
+              <div class="card border-0 ">
+               <div class="card-body p-0">
+                 <img class="img-fluid w-100" src="https://i.pinimg.com/236x/fc/88/7b/fc887be98f23597b514c3aa022200abc.jpg"> 
+               </div>
+              </div>
+              <h4>Carrots</h4>
+                 <p style="font-size: 1.19rem">234$</p>
+              <div>
+               <h5></h5>
+              </div>
+           </div>
+           <div class="col-lg-3 pro">
+            <div class="card border-0 ">
+             <div class="card-body p-0">
+               <img class="img-fluid w-100" src="https://i.pinimg.com/236x/55/9c/d8/559cd8aa7ef81a5d25228ce146b2bfdc.jpg"> 
+             </div>
+            </div>
+            <h4>Carrots</h4>
+               <p style="font-size: 1.19rem">234$</p>
+            <div>
+             <h5></h5>
+            </div>
+         </div>
+         <div class="col-lg-3 pro">
+          <div class="card border-0 ">
+           <div class="card-body p-0">
+             <img class="img-fluid w-100" src="https://i.pinimg.com/236x/eb/44/40/eb4440dea2a3d775a3db574a75d41c12.jpg">
+                       </div>
+          </div>
+          <h4>Carrots</h4>
+             <p style="font-size: 1.19rem">234$</p>
+          <div>
+           <h5></h5>
+          </div>
+       </div>
+          </div>
+           <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+           <div class="row text-center pt-3 " id="row2">
+            <div class="col-lg-3 pro">
+               <div class="card border-0">
+                <div class="card-body p-0">
+                  <img class="img-fluid w-100" src="https://i.pinimg.com/236x/f2/5b/9b/f25b9b138c8f25d447b5b36810eb9141.jpg"> 
+                </div>
+               </div>
+               <h4>Carrots</h4>
+                  <p style="font-size: 1.19rem">234$</p>
+               <div>
+                <h5></h5>
+               </div>
+            </div>
+            <div class="col-lg-3 pro">
+              <div class="card border-0 ">
+               <div class="card-body p-0">
+                 <img class="img-fluid w-100" src="https://i.pinimg.com/236x/cf/9c/18/cf9c18b9d145b59be917d56c8c7c8292.jpg"> 
+               </div>
+              </div>
+              <h4>Carrots</h4>
+                 <p style="font-size: 1.19rem">234$</p>
+              <div>
+               <h5></h5>
+              </div>
+           </div>
+           <div class="col-lg-3 pro">
+            <div class="card border-0 ">
+             <div class="card-body p-0">
+               <img class="img-fluid w-100" src="https://i.pinimg.com/236x/c7/e7/5b/c7e75b0c7756102a9b73b575bb9ca244.jpg"> 
+             </div>
+            </div>
+            <h4>Carrots</h4>
+               <p style="font-size: 1.19rem">234$</p>
+            <div>
+             <h5></h5>
+            </div>
+         </div>
+         <div class="col-lg-3 pro">
+          <div class="card border-0 ">
+           <div class="card-body p-0">
+             <img class="img-fluid w-100" src="https://i.pinimg.com/236x/10/64/a4/1064a472038f180405555f8aebc19cfd.jpg">
+                       </div>
+          </div>
+          <h4>Carrots</h4>
+             <p style="font-size: 1.19rem">234$</p>
+          <div>
+           <h5></h5>
+          </div>
+       </div>
+          </div>
+        
+         <!-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm -->
+         <div class="row text-center pt-3 " id="row2">
+          <div class="col-lg-3 pro">
+             <div class="card border-0">
+              <div class="card-body p-0">
+                <img class="img-fluid w-100" src="https://i.pinimg.com/236x/16/9a/32/169a3289fe578eeb48ff31143841112d.jpg"> 
+              </div>
+             </div>
+             <h4>Carrots</h4>
+                <p style="font-size: 1.19rem">234$</p>
+             <div>
+              <h5></h5>
+             </div>
+          </div>
+          <div class="col-lg-3 pro">
+            <div class="card border-0 ">
+             <div class="card-body p-0">
+               <img class="img-fluid w-100" src="https://i.pinimg.com/236x/03/8a/2f/038a2fcb0fa1612d39daae4a1dde0d3e.jpg"> 
+             </div>
+            </div>
+            <h4>Carrots</h4>
+               <p style="font-size: 1.19rem">234$</p>
+            <div>
+             <h5></h5>
+            </div>
+         </div>
+         <div class="col-lg-3 pro">
+          <div class="card border-0 ">
+           <div class="card-body p-0">
+             <img class="img-fluid w-100" src="https://i.pinimg.com/236x/84/5f/49/845f492574d68f50f4b4b369a74888b7.jpg"> 
+           </div>
+          </div>
+          <h4>Carrots</h4>
+             <p style="font-size: 1.19rem">234$</p>
+          <div>
+           <h5></h5>
+          </div>
+       </div>
+       <div class="col-lg-3 pro">
+        <div class="card border-0 ">
+         <div class="card-body p-0">
+           <img class="img-fluid w-100" src="https://i.pinimg.com/236x/64/09/7a/64097a1081e6d41d0b041eaf796cd540.jpg">
+                     </div>
+        </div>
+        <h4>Carrots</h4>
+           <p style="font-size: 1.19rem">234$</p>
+        <div>
+         <h5></h5>
+        </div>
+     </div>
+        </div>
+      
+      </section>
+      <!-- !-- mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm --> -->
+           <div class="row text-center pt-3 " id="row2">
+            <div class="col-lg-3 pro">
+               <div class="card border-0">
+                <div class="card-body p-0">
+                  <img class="img-fluid w-100" src="https://i.pinimg.com/236x/5a/35/ab/5a35ab7f2ffec8db4fd1cd186ae8fc0e.jpg"> 
+                </div>
+               </div>
+               <h4>Carrots</h4>
+                  <p style="font-size: 1.19rem">234$</p>
+               <div>
+                <h5></h5>
+               </div>
+            </div>
+            <div class="col-lg-3 pro">
+              <div class="card border-0 ">
+               <div class="card-body p-0">
+                 <img class="img-fluid w-100" src="https://i.pinimg.com/236x/c9/57/8a/c9578ad106f9224ec541022006034879.jpg"> 
+               </div>
+              </div>
+              <h4>Carrots</h4>
+                 <p style="font-size: 1.19rem">234$</p>
+              <div>
+               <h5></h5>
+              </div>
+           </div>
+           <div class="col-lg-3 pro">
+            <div class="card border-0 ">
+             <div class="card-body p-0">
+               <img class="img-fluid w-100" src="https://i.pinimg.com/236x/88/82/dc/8882dc32d8997c8337c218edb253f4b6.jpg"> 
+             </div>
+            </div>
+            <h4>Carrots</h4>
+               <p style="font-size: 1.19rem">234$</p>
+            <div>
+             <h5></h5>
+            </div>
+         </div>
+         <div class="col-lg-3 pro">
+          <div class="card border-0 ">
+           <div class="card-body p-0">
+             <img class="img-fluid w-100" src="https://i.pinimg.com/236x/3f/4f/81/3f4f81dc3e995724dbc8dfe38bfa8620.jpg">
+                       </div>
+          </div>
+          <h4>Carrots</h4>
+             <p style="font-size: 1.19rem">234$</p>
+          <div>
+           <h5></h5>
+          </div>
+       </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 text-center m-auto">
+              <button class="btn1" id="btn2" onclick="MORE">Click For More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ///////////////////////////////////////////////// -->
+      <section class="contact my-5">
+        <div class="container py-3">
+          <div class="row ">
+            <div class="col-lg-5 container text-center" >
+              <h2 style="font-size: 3.1rem;">Contact Us</h2>
+              <h6>Always Be In Touch With Us</h6>
+          </div>
+          </div>
+          <div class="row  py-3">
+            <div class="col-lg-9 m-auto">
+              <div class="row ">
+                <div class="col-lg-4 py-3">
+                  <h5>LOCACTION</h5>
+                  <p>New York 0911 First Street DC</p>
+                  <h5>PHONE</h5>
+                  <p>01280398713</p>
+                  <h5>EMAIL</h5>
+                  <p>marwasaeed373@gmail.com</p>
+               </div>
+                
+             
+            <div class="col-lg-7 py-3">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" class="form-control bg-light" placeholder="Enter First Name">
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" class="form-control bg-light" placeholder="Enter First Last">
+                </div></div>
+                <div class="row py-3">
+                <div class="col-lg-12">
+                  <textarea cols="10" rows="5" class="form-control bg-light" placeholder="Enter Your Message"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-lg-6 text-center m-auto">
+              <button class="btn1" id="btn2" onclick="MORE" style="width: 28%;">Submit</button>
+            </div>
+          </div>
+          </div>
+        </section>
+        <!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+        <div class="w-100 ">
+
+          <footer class="bg-light text-center text-white">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #3b5998;"
+                href="#!"
+                role="button"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #55acee;"
+                href="#!"
+                role="button"><i class="fa fa-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #dd4b39;"
+                href="#!"
+                role="button"
+                ><i class="fa fa-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #ac2bac;"
+                href="#!"
+                role="button"
+                ><i class="fa fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #0082ca;"
+                href="#!"
+                role="button"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+              <!-- Github -->
+              <a
+                class="btn btn-primary btn-floating m-1"
+                style="background-color: #333333;"
+                href="#!"
+                role="button"
+                ><i class="fa fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color:black;">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Organic.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+          
+        </div>
+        <!-- End of .container -->
+      <script>
+      function MORE()
+      {
+         document.getElementById("row2").style.display="block";
+      }
+      </script>
+</body>
+</html>
